@@ -7,7 +7,7 @@ export const Title = () => {
             <SVG />
         </div>
         <h1 className='title'>
-            <span>Carga tus imagenes</span><br />
+            <span>Carga tus imágenes</span><br />
             <span> con</span><br />
             <span>React y Cloudinary</span><br />            
         </h1>
