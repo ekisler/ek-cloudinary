@@ -2,16 +2,16 @@ import React from 'react';
 
 interface Props {
     loading: boolean;
-    img: string;
+    selected: string;
     onUpload: () => Promise<void>;
     onImageRemove: (index: number) => void;
     onImageUpdate: (index: number) => void
 }
 
-export const ImageSelected = ({ img, loading, onUpload, onImageRemove, onImageUpdate }:  Props) => {
+export const ImageSelected = ({ selected, loading, onUpload, onImageRemove, onImageUpdate }:  Props) => {
     return (
         <div>
-            <img className='image-selected' src={img} alt='image-selected' width={300} />
+            <img className='image-selected' src={selected} alt='image-selected' width={300} />
             <div className='container-buttons'>
                 {
                     loading
